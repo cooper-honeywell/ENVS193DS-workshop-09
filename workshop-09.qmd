@@ -20,3 +20,11 @@ ggplot(aes(x = latitude, y = size), data = pie_crab)+ #create plot
   labs(x = "Latitude", y = "Size")+ # update axis labels
   theme_minimal() # remove gridlines
 ```
+
+```{r}
+crab_model <- lm(size ~ latitude, data = pie_crab)
+par(mfrow = c(2,2))
+    plot(crab_model)
+    
+    
+```
