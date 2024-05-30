@@ -1,0 +1,14 @@
+---
+title: "workshop-09"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidyverse)
+library(lterdatasampler)
+library(ggeffects)
+library(here)
+
+data(lterdatasampler::pie_crab)
+```
