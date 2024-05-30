@@ -10,5 +10,13 @@ library(lterdatasampler)
 library(ggeffects)
 library(here)
 
-data(lterdatasampler::pie_crab)
+data(pie_crab)
+
+```
+
+```{r}
+ggplot(aes(x = latitude, y = size), data = pie_crab)+ #create plot
+  geom_point(color = "orange")+ # scatter plot
+  labs(x = "Latitude", y = "Size")+ # update axis labels
+  theme_minimal() # remove gridlines
 ```
